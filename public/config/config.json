@@ -1,19 +1,19 @@
 {
-  "CONTRACT_ADDRESS": "0x8f7090Cc754247F7CE5e01EFf45dD11eBC21599d",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x8f7090Cc754247F7CE5e01EFf45dD11eBC21599d",
+  "CONTRACT_ADDRESS": "0x2b47946a12216d64666e20e7c6c6ecd8bb75082d",
+  "SCAN_LINK": "https://etherscan.io/address/0x2b47946a12216d64666e20e7c6c6ecd8bb75082d",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "imptown.wtf",
   "SYMBOL": "IMPWTF",
   "MAX_SUPPLY": 10001,
   "WEI_COST": 7000000000000000,
   "DISPLAY_COST": 0,
-  "GAS_LIMIT": 350000,
-  "TOTAL_FREE": 1030,
+  "GAS_LIMIT": 100000,
+  "TOTAL_FREE": 5000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/imptown-wtf-test",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/imptown-wtf",
   "SHOW_BACKGROUND": true
 }

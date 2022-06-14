@@ -159,7 +159,7 @@ function App() {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit * mintAmount);
+    let totalGasLimit = gasLimit;
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`MINTING YOUR HELL DEMON...`);
@@ -268,7 +268,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        { <a href={"https://opensea.io/"} target="_blank">
+        { <a href={"https://opensea.io/collection/imptown-wtf"} target="_blank">
           <Styledicon1 alt={"logo"} src={"/config/images/Icon1.png"} />
         </a> }
 
