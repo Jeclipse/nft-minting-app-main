@@ -135,6 +135,7 @@ function App() {
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`WHAT THE HELL ARE YOU WAITING FOR.`);
   const [mintAmount, setMintAmount] = useState(1);
+  const [isConnected, setIsConnected] = useState(false);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -312,7 +313,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              {isConnected ? (data.totalSupply + "/" + CONFIG.MAX_SUPPLY) : ""}
             </s.TextTitle>
             <s.TextDescription
               style={{
@@ -397,6 +398,7 @@ function App() {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
+                        setIsConnected(true);
                       }}
                     >
                       Connect
